@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #
   s.vendored_frameworks = 'Release_1.0.0/*.xcframework'
 
-  # This is a good fallback if you also have .framework files
+  # This is a good fallback if you also have .framework filess
   s.vendored_frameworks << 'Release_1.0.0/*.framework'
 
   # 5. REQUIRED LINKING FLAGS
