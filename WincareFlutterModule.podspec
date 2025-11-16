@@ -20,12 +20,14 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.0'
 
   # 4. LINKING THE FRAMEWORKS
-  # This tells CocoaPods to find all .xcframework files at the root
-  # of the unzipped folder. This assumes your ZIP file structure is flat.
-  s.vendored_frameworks = '*.xcframework'
+  #
+  # **CRITICAL FIX**: Updated path to look inside the 'Release_1.0.0'
+  # folder that is created after unzipping.
+  #
+  s.vendored_frameworks = 'Release_1.0.0/*.xcframework'
 
   # This is a good fallback if you also have .framework files
-  s.vendored_frameworks << '*.framework'
+  s.vendored_frameworks << 'Release_1.0.0/*.framework'
 
   # 5. REQUIRED LINKING FLAGS
   # This section looks correct and is required for Flutter.
