@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   # **CRITICAL FIX**: Updated path to look inside the 'Release_1.0.0'
   # folder that is created after unzipping.
   #
-  s.vendored_frameworks = 'Release_1.0.0/*.xcframework'
-
-  # This is a good fallback if you also have .framework filess
-  s.vendored_frameworks << 'Release_1.0.0/*.framework'
+  s.vendored_frameworks = [
+      '*.xcframework',
+      '*.framework'
+    ]
 
   # 5. REQUIRED LINKING FLAGS
   # This section looks correct and is required for Flutter.
