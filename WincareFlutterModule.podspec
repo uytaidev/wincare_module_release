@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   # folder that is created after unzipping.
   #
   s.vendored_frameworks = [
-      '*.xcframework',
-      '*.framework'
+      'Release_1.0.0/*.xcframework',
+      'Release_1.0.0/*.framework'
     ]
 
   # 5. REQUIRED LINKING FLAGS
