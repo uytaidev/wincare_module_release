@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 
   # unzip contents are at root of zip → MUST BE EXACT
   s.vendored_frameworks = [
-    'App.xcframework',
-    'Flutter.xcframework'
+    '*App.xcframework'
   ]
 
   s.user_target_xcconfig = {
