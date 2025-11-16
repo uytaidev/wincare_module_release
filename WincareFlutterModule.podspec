@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
     '*.xcframework'
   ]
 
-  s.user_target_xcconfig = {
-    'OTHER_LDFLAGS' => '$(inherited) -framework Flutter -framework App',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64'
-  }
+#   s.user_target_xcconfig = {
+#     'OTHER_LDFLAGS' => '$(inherited) -framework Flutter -framework App',
+#     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64'
+#   }
 end
