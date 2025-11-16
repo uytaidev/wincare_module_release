@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   #s.license          = { :file => 'LICENSE' }
   s.license      = { :type => 'BSD' }
   s.author           = { 'uytaidev' => 'uytai.dev@gmail.com' }
-  s.source = { :git => 'https://github.com/uytaidev/wincare_module_release.git', :tag => '1.0.0' }
+  s.source           = { :http => 'https://github.com/uytaidev/wincare_module_release/releases/download/1.0.0/Release_1.0.0.zip' }
   # 2. PLATFORM & FRAMEWORK SETTINGS
   s.ios.deployment_target = '12.0' # Set this to your minimum supported iOS version
   s.swift_version    = '5.0'
