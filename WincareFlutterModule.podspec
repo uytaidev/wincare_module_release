@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   # IMPORTANT: keep this!
   s.source = {
-    :http => 'https://github.com/uytaidev/wincare_module_release/releases/download/1.0.0/Release_1.0.0.zip'
+    :http => 'https://github.com/uytaidev/wincare_module_release/releases/download/1.0.0/Release.zip'
   }
 
   # unzip contents are at root of zip → MUST BE EXACT
